@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.hello" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>DemoTest</name>
+    <description>Sample Apache Cordova App</description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="enterroomnew://*/*" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="LottieRemoteEnabled" value="false" />
+    <preference name="LottieLoopAnimation" value="true" />
+    <preference name="android-minSdkVersion" value="23" />
+    <platform name="android">
+        <preference name="GradlePluginKotlinEnabled" value="true" />
+        <preference name="AndroidXEnabled" value="true" />
+        <preference name="LottieAnimationLocationLight" value="www/public/animate.json" />
+        <preference name="LottieBackgroundColor" value="#fff" />
+        <preference name="LottieEnableHardwareAcceleration" value="true" />
+        <!-- <preference name="LottieWidth" value="350" />
+        <preference name="LottieHeight" value="350" /> -->
+        <preference name="LottieFullScreen" value="true" />
+        <preference name="LottieCacheDisabled" value="true" />
+        <allow-intent href="market:*" />
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
+    </platform>
+</widget>

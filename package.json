@@ -1,0 +1,47 @@
+{
+  "name": "com.example.hello",
+  "displayName": "HelloWorld",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "com-badrit-macaddress": "git+https://github.com/mohamed-salah/MacAddress.git",
+    "cordova-android": "^10.1.2",
+    "cordova-plugin-autostart": "^2.3.0",
+    "cordova-plugin-device": "^2.1.0",
+    "cordova-plugin-file": "^7.0.0",
+    "cordova-plugin-lottie-splashscreen": "^0.9.6",
+    "cordova-plugin-media": "^6.1.0",
+    "cordova-plugin-network-information": "^3.0.0",
+    "cordova-plugin-x-toast": "^2.7.3",
+    "MyToast": "file:MyToast",
+    "talkCloudToast": "file:TalkCloudToast"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-device": {},
+      "cordova-plugin-autostart": {},
+      "cordova-plugin-network-information": {},
+      "com-badrit-macaddress": {},
+      "cordova-plugin-x-toast": {},
+      "org.demo.mytoast": {},
+      "cordova-plugin-lottie-splashscreen": {},
+      "cordova-plugin-media": {},
+      "com.utop.TalkCloud": {}
+    }
+  },
+  "dependencies": {
+    "axios": "^1.2.1"
+  }
+}
